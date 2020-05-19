@@ -4,59 +4,42 @@
     box-sizing: border-box;
 }
 
-nav {
+#wrapper {
+    background-color: aquamarine;
+    height: 300vh;
+}
+
+nav {}
+
+/* ---------- Mobile-Menu ----------- */
+
+#mobile-menu {
+    transition: background-color 0.3s linear;
+}
+
+#mobile-menu-devider {
     height: 9vh;
     width: 100vw;
     display: flex;
     justify-content: space-between;
-}
-
-/* ---------- Mobile-Menu ----------- */
-
-#mobile-burger {
-    right: 0;
-    width: 9vh;
-    height: 9vh;
-    margin-right: 5px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    z-index: 10;
 }
 
-/* ------ Right-Menu ------ */
-
-#right-menu {
-    width: 8vw;
-    background-color: aqua;
-    height: 100vh;
-    right: 0;
-}
-
-#menu-logo {
+#mobile-menu-logo {
     height: 9vh;
     left: 0;
     width: 100px;
     padding: 5px;
 }
 
-#menu-logo img {
-    width: 100%;
-}
-
-/* ------ Left-Menu ------ */
-
-#left-menu {
-    width: 8vw;
-    background-color: aqua;
-    height: 100vh;
-    left: 0;
+#mobile-menu-logo img {
+    height: 100%;
 }
 
 #mobile-burger {
-    right: 0;
-    width: 9vh;
     height: 9vh;
+    width: 9vh;
     margin-right: 5px;
     display: flex;
     justify-content: center;
@@ -65,30 +48,191 @@ nav {
 }
 
 .burger-line {
-    height: 5px;
-    width: 40px;
-    margin: 4px;
+    height: 4px;
+    width: 35px;
+    margin: 3px;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0px 0px 2px 0px gray;
+    transition: all 0.3s ease;
+}
+
+.toggle #burger-line-1 {
+    transform: rotate(-45deg) translate(-7px, 7px);
+}
+
+.toggle #burger-line-2 {
+    opacity: 0;
+}
+
+.toggle #burger-line-3 {
+    transform: rotate(45deg) translate(-7px, -7px);
+}
+
+/* ---------- Mobile Overlay ----------*/
+
+#mobile-menu-overlay {
+    z-index: 9;
+    height: 91vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.3s, opacity 0.3s linear;
+}
+
+#mobile-menu-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#mobile-menu-links li {
+    list-style: none;
+}
+
+#mobile-menu-links a {
+    font-family: "HelveticaNeue-CondensedBlack";
+    font-size: 2.6em;
+    color: black;
+    text-decoration: none;
+}
+
+#social-media-menu-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.social-media-menu-icon-slot {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* ---------- Desktop-Menu ----------- */
+
+#desktop-menu {
+    display: none;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+}
+
+#desktop-menu-overlay {
+    background-color: yellow;
+    width: 0vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transition: width 0.3s;
+}
+
+/* ------ Left-Menu ------ */
+
+#left-menu {
+    width: 100px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+}
+
+#desktop-menu-logo {
+    width: 100%;
+    padding: 5px;
+}
+
+#desktop-menu-logo img {
+    width: 100%;
+}
+
+#menu-heading {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: "Helvetica Neue";
+    font-weight: 600;
+    color: white;
+    margin-top: 50px;
+    font-size: 1.8em;
+}
+
+/* ------ Right-Menu ------ */
+
+#right-menu {
+    width: 100px;
+    height: 100vh;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+}
+
+#desktop-burger {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.toggle #desktop-burger-line-1 {
+    transform: rotate(-45deg) translate(-7px, 7px);
+}
+
+.toggle #desktop-burger-line-2 {
+    opacity: 0;
+}
+
+.toggle #desktop-burger-line-3 {
+    transform: rotate(45deg) translate(-7px, -7px);
+}
+
+#social-media-section {
+    margin-top: 40px;
+}
+
+.social-media-icons {
+    width: 41px;
+    height: 41px;
+    margin-bottom: 20px;
+}
+
+.social-media-icons img {
+    width: 100%;
+}
+
+.white-icons {
+    display: block;
+}
+
+.black-icons {
+    display: none;
 }
 
 /* ------------ Media query -------------- */
 
 @media screen and (min-width: 768px) {
-    
-    #left-menu {
+
+    #mobile-menu {
         display: none;
     }
-    
-    #right-menu {
-        display: none;
+
+    #desktop-menu {
+        display: block;
     }
+
+    .burger-line {
+        margin: 6px;
+    }
+
+
 }
-
-
-
-
-
-
-

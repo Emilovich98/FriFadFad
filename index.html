@@ -13,37 +13,70 @@
     <div id="wrapper">
         <header>
             <nav>
-               <!-- Mobile navigation -->
-                <div id="mobile-menu-logo">
-                    <img class="logo-image" src="images/frafadfor-icon-logo.png" alt="Logo">
+                <!-- Mobile navigation -->
+                <div id="mobile-menu">
+                    <div id="mobile-menu-devider">
+                        <div id="mobile-menu-logo">
+                            <img src="images/frafadfor-icon-logo.png" alt="Logo">
+                        </div>
+                        <div id="mobile-burger" onclick="showMobileNav()">
+                            <div class="burger-line" id="burger-line-1"></div>
+                            <div class="burger-line" id="burger-line-2"></div>
+                            <div class="burger-line" id="burger-line-3"></div>
+                        </div>
+                    </div>
+                    <div id="mobile-menu-overlay">
+                        <ul id="mobile-menu-links">
+                            <li><a href="">FORSIDE</a></li>
+                            <li><a href="">FORESTILLINGER</a></li>
+                            <li><a href="">BLIV FRIVILLIG</a></li>
+                            <li><a href="">OM TEATRET</a></li>
+                            <li><a href="">PRAKTISK INFO</a></li>
+                        </ul>
+                        <div id="social-media-menu-icons">
+                            <div class="social-media-menu-icon-slot">
+                                <a href=""><img src="images/facebook-icon.svg" alt="Facebook"></a>
+                            </div>
+                            <div class="social-media-menu-icon-slot">
+                                <a href=""><img src="images/instagram-icon.svg" alt="Instagram"></a>
+                            </div>
+                            <div class="social-media-menu-icon-slot">
+                                <a href=""><img src="images/youtube-icon.svg" alt="Youtube"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mobile-burger">
-                    <div class="burger-line" id="burger-line-1"></div>
-                    <div class="burger-line" id="burger-line-2"></div>
-                    <div class="burger-line" id="burger-line-3"></div>
-                </div>
-                
+
                 <!-- Desktop navigation -->
-                <div id="right-menu">
-                    <div id="desktop-menu-logo">
-                        <img class="logo-image" src="images/frafadfor-icon-logo.png" alt="Logo">
-                    </div>
-                </div>
-                <div id="left-menu">
-                    <div class="burger">
-                        <div class="burger-line" id="burger-line-1"></div>
-                        <div class="burger-line" id="burger-line-2"></div>
-                        <div class="burger-line" id="burger-line-3"></div>
-                    </div>
-                    <div class="social-media-section">
-                        <div class="social-media-icons">
-                            <img src="images/facebook-icon.svg" alt="Facebook-icon">
+                <div id="desktop-menu">
+                   <div id="desktop-menu-overlay">
+                       
+                   </div>
+                    <div id="left-menu">
+                        <div id="desktop-menu-logo">
+                            <img src="images/frafadfor-icon-logo.png" alt="Logo">
                         </div>
-                        <div class="social-media-icons">
-                            <img src="images/instagram-icon.svg" alt="Instagram-icon">
+                        <p id="menu-heading">FRI·FAD·FOR</p>
+                    </div>
+                    <div id="right-menu">
+                        <div id="desktop-burger" onclick="showDesktopNav()">
+                            <div class="burger-line" id="desktop-burger-line-1"></div>
+                            <div class="burger-line" id="desktop-burger-line-2"></div>
+                            <div class="burger-line" id="desktop-burger-line-3"></div>
                         </div>
-                        <div class="social-media-icons">
-                            <img src="images/youtube-icon.svg" alt="Youtube-icon">
+                        <div id="social-media-section">
+                            <div class="social-media-icons">
+                                <img class="white-icons" src="images/facebook-icon-white.svg" alt="Facebook-icon">
+                                <img class="black-icons" src="images/facebook-icon.svg" alt="Facebook-icon">
+                            </div>
+                            <div class="social-media-icons">
+                                <img class="white-icons" src="images/instagram-icon-white.svg" alt="Instagram-icon">
+                                <img class="black-icons" src="images/instagram-icon.svg" alt="Instagram-icon">
+                            </div>
+                            <div class="social-media-icons">
+                                <img class="white-icons" src="images/youtube-icon-white.svg" alt="Youtube-icon">
+                                <img class="black-icons" src="images/youtube-icon.svg" alt="Youtube-icon">
+                            </div>
                         </div>
                     </div>
                 </div>
