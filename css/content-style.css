@@ -1,0 +1,32 @@
+
+
+#video-crop {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#mobile-background-video {
+    display: block;
+    min-height: 100vh;
+}
+
+#desktop-background-video {
+    display: none;
+    min-height: 102vh;
+}
+
+@media screen and (min-width: 768px) {
+
+    #mobile-background-video {
+        display: none;
+    }
+
+    #desktop-background-video {
+        display: block;
+    }
+}
+

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FriFadFor.dk</title>
+    <link rel="icon" href="images/fritter-favicon.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/content-style.css">
 </head>
@@ -27,11 +28,11 @@
                     </div>
                     <div id="mobile-menu-overlay">
                         <ul id="mobile-menu-links">
-                            <li><a href="">FORSIDE</a></li>
-                            <li><a href="">FORESTILLINGER</a></li>
-                            <li><a href="">BLIV FRIVILLIG</a></li>
-                            <li><a href="">OM TEATRET</a></li>
-                            <li><a href="">PRAKTISK INFO</a></li>
+                            <li><a href="index.html">FORSIDE</a></li>
+                            <li><a href="pages/forestillinger.html">FORESTILLINGER</a></li>
+                            <li><a href="pages/bliv-frivillig">BLIV FRIVILLIG</a></li>
+                            <li><a href="pages/om-teatret">OM TEATRET</a></li>
+                            <li><a href="pages/praktisk-info.html">PRAKTISK INFO</a></li>
                         </ul>
                         <div id="social-media-menu-icons">
                             <div class="social-media-menu-icon-slot">
@@ -49,9 +50,15 @@
 
                 <!-- Desktop navigation -->
                 <div id="desktop-menu">
-                   <div id="desktop-menu-overlay">
-                       
-                   </div>
+                    <div id="desktop-menu-overlay">
+                        <ul id="desktop-menu-links">
+                            <li><a href="">FORSIDE</a></li>
+                            <li><a href="">FORESTILLINGER</a></li>
+                            <li><a href="">BLIV FRIVILLIG</a></li>
+                            <li><a href="">OM TEATRET</a></li>
+                            <li><a href="">PRAKTISK INFO</a></li>
+                        </ul>
+                    </div>
                     <div id="left-menu">
                         <div id="desktop-menu-logo">
                             <img src="images/frafadfor-icon-logo.png" alt="Logo">
@@ -65,24 +72,47 @@
                             <div class="burger-line" id="desktop-burger-line-3"></div>
                         </div>
                         <div id="social-media-section">
-                            <div class="social-media-icons">
-                                <img class="white-icons" src="images/facebook-icon-white.svg" alt="Facebook-icon">
-                                <img class="black-icons" src="images/facebook-icon.svg" alt="Facebook-icon">
+                            <div id="social-media-icons-white">
+                                <div class="social-media-icons">
+                                    <a href=""><img id="facebook-white" src="images/facebook-icon-white.svg" alt="Facebook-icon"></a>
+                                </div>
+                                <div class="social-media-icons">
+                                    <a href=""><img id="instagram-white" src="images/instagram-icon-white.svg" alt="Instagram-icon"></a>
+                                </div>
+                                <div class="social-media-icons">
+                                    <a href=""><img id="youtube-white" src="images/youtube-icon-white.svg" alt="Youtube-icon"></a>
+                                </div>
                             </div>
-                            <div class="social-media-icons">
-                                <img class="white-icons" src="images/instagram-icon-white.svg" alt="Instagram-icon">
-                                <img class="black-icons" src="images/instagram-icon.svg" alt="Instagram-icon">
+                            <div id="social-media-icons-black">
+                                <div class="social-media-icons">
+                                    <a href=""><img id="facebook-black" src="images/facebook-icon.svg" alt="Facebook-icon"></a>
+                                </div>
+                                <div class="social-media-icons">
+                                    <a href=""><img id="instagram-black" src="images/instagram-icon.svg" alt="Instagram-icon"></a>
+                                </div>
+                                <div class="social-media-icons">
+                                    <a href=""><img id="youtube-black" src="images/youtube-icon.svg" alt="Youtube-icon"></a>
+                                </div>
                             </div>
-                            <div class="social-media-icons">
-                                <img class="white-icons" src="images/youtube-icon-white.svg" alt="Youtube-icon">
-                                <img class="black-icons" src="images/youtube-icon.svg" alt="Youtube-icon">
-                            </div>
+                        </div>
+                        <div id="arrow-down">
+                            <img src="images/arrow-down.svg" alt="Arrow down">
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
         <main>
+            <div id="video-crop">
+                <video autoplay muted loop id="mobile-background-video">
+                    <source src="video/mobile-video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <video autoplay muted loop id="desktop-background-video">
+                    <source src="video/desktop-video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
         </main>
         <footer>
         </footer>
