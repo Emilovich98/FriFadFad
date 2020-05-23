@@ -7,7 +7,9 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    
 }
+
 
 #mobile-background-video {
     display: block;
@@ -29,4 +31,86 @@
         display: block;
     }
 }
+
+
+
+
+
+
+#om-teatret-underside{
+    position: absolute;
+    z-index: 2;
+    align-content: center;
+}
+
+#overskrift-historie{
+    font-family: "HelveticaNeue-CondensedBlack";
+    font-size: 100px;
+    letter-spacing: 4px;
+    margin-top: 284.5px;
+    text-align: center;
+    color: white;
+}
+
+#historie-text{
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+    line-height: 30px;
+    font-family: lato;
+    font-weight: lighter;
+
+}
+
+#buttons{
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+    
+}
+
+.Btn{
+    background: #F8D560;
+    padding: 10px 45px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-left: 10px;
+    font-family: "HelveticaNeue";
+    font-weight: 600; 
+    font-size: 15px;
+}
+
+.overlay{
+    background: #000000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 95%;
+}
+
+
+#mission-text, #vision-text, #value-text{
+   
+    position: absolute;
+    opacity: 0;
+}
+
+#overskrift-mission, #overskrift-vision, #overskrift-value{
+    
+    position: absolute;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
 

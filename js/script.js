@@ -65,3 +65,13 @@ function showDesktopNav() {
 }
 
 
+// text transition
+
+
+let btnOne = document.querySelector('#btn1');
+let btnTwo = document.querySelector('#btn2');
+let btnThree = document.querySelector('#btn3');
+
+btnOne.addEventListener('click', () => btnOne.style.backgroundColor='#337ab7')
+btnTwo.addEventListener('click', () => btnOne.style.backgroundColor='#c9302c')
+btnThree.addEventListener('click', () => btnOne.style.backgroundColor='#4cae4c')
