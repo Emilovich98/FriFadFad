@@ -108,10 +108,97 @@
 
 
 
+/*------------- Main ----------------------*/
+
+#content-praktisk-info{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    font-family:"HelveticaNeue-CondensedBlack";
+    font-size: 3em;
+    margin-top: 100px;
+    
+}
 
 
 
+#container{
+    position: absolute;
+    z-index: 10;
+    color: white;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+    padding: 50px 10px;
+    margin-top: 50px;
+}
 
+#flex-container-one{
+    display: flex;
+    margin-right: 10px;
+}
+
+#flex-container-two{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 10px;
+}
+
+.img-icons{
+    width: 60%;
+}
+
+
+
+ul{
+    list-style-type: none;
+    font-size: 15px;
+    font-family: lato;
+    font-weight: lighter;
+    line-height: 30px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+#img-devider{
+    position: absolute;
+    z-index: 2;
+    margin-top: 600px;
+    overflow: hidden;
+    width: 100%;
+}
+
+#test{
+    overflow: hidden;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+#samarbejdspartnere-text{
+    font-family: lato;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 40px;
+}
+
+.img-partner-logo{
+    margin-top: 50px;
+    width:  150px;
+    height: 150px;
+    object-fit: contain;
+}
 
 
 
