@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriFadFor.dk</title>
+    <link rel="icon" href="images/fritter-favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/content-style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <!-- Mobile navigation -->
+                <div id="mobile-menu">
+                    <div id="mobile-menu-devider">
+                        <div id="mobile-menu-logo">
+                            <img src="images/frafadfor-icon-logo.png" alt="Logo">
+                        </div>
+                        <div id="mobile-burger" onclick="showMobileNav()">
+                            <div class="burger-line" id="burger-line-1"></div>
+                            <div class="burger-line" id="burger-line-2"></div>
+                            <div class="burger-line" id="burger-line-3"></div>
+                        </div>
+                    </div>
+                    <div id="mobile-menu-overlay">
+                        <ul id="mobile-menu-links">
+                            <li><a href="index.html">FORSIDE</a></li>
+                            <li><a href="pages/forestillinger.html">FORESTILLINGER</a></li>
+                            <li><a href="pages/bliv-frivillig">BLIV FRIVILLIG</a></li>
+                            <li><a href="pages/om-teatret">OM TEATRET</a></li>
+                            <li><a href="pages/praktisk-info.html">PRAKTISK INFO</a></li>
+                        </ul>
+                        <div id="social-media-menu-icons">
+                            <div class="social-media-menu-icon-slot">
+                                <a href=""><img src="images/facebook-icon.svg" alt="Facebook"></a>
+                            </div>
+                            <div class="social-media-menu-icon-slot">
+                                <a href=""><img src="images/instagram-icon.svg" alt="Instagram"></a>
+                            </div>
+                            <div class="social-media-menu-icon-slot">
+                                <a href=""><img src="images/youtube-icon.svg" alt="Youtube"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop navigation -->
+                <div id="desktop-menu">
+                    <div id="desktop-menu-overlay">
+                        <ul id="desktop-menu-links">
+                            <li><a href="">FORSIDE</a></li>
+                            <li><a href="">FORESTILLINGER</a></li>
+                            <li><a href="">BLIV FRIVILLIG</a></li>
+                            <li><a href="">OM TEATRET</a></li>
+                            <li><a href="">PRAKTISK INFO</a></li>
+                        </ul>
+                    </div>
+                    <div id="left-menu">
+                        <div id="desktop-menu-logo">
+                            <img src="images/frafadfor-icon-logo.png" alt="Logo">
+                        </div>
+                        <p id="menu-heading">FRI·FAD·FOR</p>
+                    </div>
+                    <div id="right-menu">
+                        <div id="desktop-burger" onclick="showDesktopNav()">
+                            <div class="burger-line" id="desktop-burger-line-1"></div>
+                            <div class="burger-line" id="desktop-burger-line-2"></div>
+                            <div class="burger-line" id="desktop-burger-line-3"></div>
+                        </div>
+                        <div id="social-media-section">
+                            <div id="social-media-icons-white">
+                                <div class="social-media-icons">
+                                    <a href=""><img id="facebook-white" src="images/facebook-icon-white.svg" alt="Facebook-icon"></a>
+                                </div>
+                                <div class="social-media-icons">
+                                    <a href=""><img id="instagram-white" src="images/instagram-icon-white.svg" alt="Instagram-icon"></a>
+                                </div>
+                                <div class="social-media-icons">
+                                    <a href=""><img id="youtube-white" src="images/youtube-icon-white.svg" alt="Youtube-icon"></a>
+                                </div>
+                            </div>
+                            <div id="social-media-icons-black">
+                                <div class="social-media-icons">
+                                    <a href=""><img id="facebook-black" src="images/facebook-icon.svg" alt="Facebook-icon"></a>
+                                </div>
+                                <div class="social-media-icons">
+                                    <a href=""><img id="instagram-black" src="images/instagram-icon.svg" alt="Instagram-icon"></a>
+                                </div>
+                                <div class="social-media-icons">
+                                    <a href=""><img id="youtube-black" src="images/youtube-icon.svg" alt="Youtube-icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="arrow-down">
+                            <img src="images/arrow-down.svg" alt="Arrow down">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+           
+            <div id="video-crop">
+                <video autoplay muted loop id="mobile-background-video">
+                    <source src="video/mobile-video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <video autoplay muted loop id="desktop-background-video">
+                    <source src="video/desktop-video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
