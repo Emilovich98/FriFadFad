@@ -1,0 +1,162 @@
+/* ------- generel styling ------- */
+
+main {}
+
+@media screen and (min-width: 768px) {
+    main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin: 0 auto;
+        z-index: -8;
+    }
+}
+
+/* ------- Styling af forside ------- */
+
+#background-video {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -9;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+#desktop-background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100%;
+    min-width: 100%;
+    display: block;
+}
+
+#forside-section-1 {}
+
+#forside-logo {
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+}
+
+#forside-logo img {
+    width: 100%;
+}
+
+#forside-heading {
+    font-family: "HelveticaNeue-CondensedBlack";
+    text-align: center;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 3em;
+    line-height: 0.9;
+}
+
+#forside-heading-marking {
+    font-size: 35px;
+    color: transparent;
+    -webkit-text-stroke-width: 1.4px;
+    -webkit-text-stroke-color: white;
+
+}
+
+#forside-video-knap {
+    color: white;
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: #F8D560;
+    border-style: solid;
+    border-width: 5px;
+    font-size: 1.4em;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+    cursor: pointer;
+    font-family: "Helvetica Neue";
+    z-index: 110;
+}
+
+#forside-video-knap:hover {
+    background-color: #F8D560;
+    color: black;
+}
+
+/* ------- media-query ------- */
+
+@media screen and (min-width: 375px) {
+
+    #forside-heading {
+        font-size: 3.6em;
+    }
+
+    #forside-heading-marking {
+        font-size: 45px;
+    }
+    
+    #forside-logo {
+        margin-top: 15vh;
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+    #forside-heading {
+        font-size: 4.4em;
+    }
+
+    #forside-heading-marking {
+        font-size: 50px;
+    }
+    
+    #forside-logo {
+        margin-top: 20vh;
+    }
+
+}
+
+@media screen and (min-width: 650px) {
+
+    #forside-heading {
+        font-size: 6em;
+    }
+
+    #forside-heading-marking {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    #forside-logo {
+        width: 200px;
+        margin-top: 20vh;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    #forside-logo {
+        width: 200px;
+    }
+
+    #forside-heading {
+        font-size: 8em;
+        line-height: 0.9;
+    }
+
+    #forside-heading-marking {
+        font-size: 70px;
+    }
+
+}
