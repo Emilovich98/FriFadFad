@@ -91,6 +91,15 @@ main {}
     color: black;
 }
 
+#dark-canvas-forside {
+    width: 100vw;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    background-color: black;
+    opacity: 80%;
+}
+
 /* ------- Styling af forestillinger ------- */
 
 h1 {
