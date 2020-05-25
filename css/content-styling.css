@@ -104,13 +104,149 @@ h1 {
 /* ------- Styling af Frivillig ------- */
 
 #dark-canvas {
-    height: 200vh;
+    height: 300vh;
     width: 100vw;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: black;
-    opacity: 80%;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+#yellow-canvas{
+    background-color: rgb(248, 213, 96);
+    height: 100vh;
+    width: 100vw;
+    margin-top: 50px;
+}
+
+#yellow-canvas-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#text-content{
+    width: 400px;
+    margin-right: 40px;
+    font-family: lato;
+    line-height: 1.5;
+    
+}
+
+#input-label{
+    margin-left: 40px;
+    width: 300px;
+    
+    
+}
+
+.name{
+  width: 100%;
+  padding-bottom: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-style: hidden;
+    font-size: 105%;
+    background-color: #3D3D3D;
+}
+
+#input{
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-style: hidden;
+    font-size: 105%;
+    background-color: #3D3D3D;
+    
+}
+
+#name-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#mail-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+#dm-container{
+   display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+
+#mail-container p{
+     background-color: #1A1A1A;
+    padding-bottom: 7px;
+    padding-right: 8px;
+    padding-left: 5px;
+    border-top-left-radius: 5px; 
+    font-family: "HelveticaNeue-CondensedBlack";
+    color: white;  
+}
+
+
+#name-container p{
+    background-color: #1A1A1A;
+    padding-bottom: 7px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-top-left-radius: 5px; 
+    font-family: "HelveticaNeue-CondensedBlack";
+    color: white;
+}
+
+
+#dm-container p {
+    background-color: #1A1A1A;
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px;
+    font-family: "HelveticaNeue-CondensedBlack";
+    color: white;
+    padding-bottom: 7px;
+    padding-left: 3px;
+}
+
+#submit{
+    background-color: rgb(248, 213, 96);
+    color: #1A1A1A;
+    border-color: #1A1A1A;
+    width: 70px;
+    height: 30px;
+    font-size: 1em;
+    margin-top: 16px;
+    border-width: 2px;
+    border-radius: 10px;
+    font-family: "HelveticaNeue-CondensedBlack";
+    
+    
+}
+
+#send-button{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#heading-start{
+    color: transparent;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: black;
+}
+#heading-end{
+    color: black;
+}
+
+
+
+#volunteer-video{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 40px;
+    position: relative;
 }
 
 /* ------- media-query ------- */
@@ -128,6 +264,8 @@ h1 {
     #forside-logo {
         margin-top: 15vh;
     }
+    
+ 
 }
 
 @media screen and (min-width: 500px) {
@@ -190,3 +328,31 @@ h1 {
     }
 
 }
+
+@media screen and (min-width: 319px) and (max-width:760px){
+
+   #yellow-canvas-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #input-label{
+        margin-top: 50px;
+    }
+    
+    #text-content{
+        max-width: 350px;
+        margin-left: 20px;
+    }
+    
+
+}
+
+@media screen and (max-width: 500px){
+    #yellow-canvas{
+      height: 160vh;  
+    }
+}
+
+
+
