@@ -18,13 +18,9 @@ body {}
     background-color: black;
 }
 
-header {
-    
-}
+header {}
 
-nav {
-    
-}
+nav {}
 
 #mobile-navigation {
     height: 9vh;
@@ -230,8 +226,7 @@ nav {
     transform: rotate(45deg) translate(-7px, -7px);
 }
 
-#social-media-section {
-}
+#social-media-section {}
 
 #social-media-icons-white {
     visibility: visible;
@@ -319,35 +314,269 @@ nav {
     transition: 0.3s;
 }
 
+/* ------------ Footer -------------- */
+
+.footer {
+    height: 110px;
+}
+
+
+#footer-container {
+    background-color: black;
+    width: 100%;
+}
+
+#footer-section-zero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 26px;
+}
+
+#footer-section-zero a {
+    margin: 5px;
+}
+
+#footer-section-zero img {
+    width: 80%;
+}
+
+.line {
+    background-color: white;
+    height: 1px;
+}
+
+#footer-section-one {
+    margin-top: 30px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+#footer-section-one h2 {
+    font-family: "HelveticaNeue-Bold";
+    font-size: 22px;
+    margin-bottom: 4px;
+    color: white;
+}
+
+#footer-section-one li {
+    font-family: "HelveticaNeue-Light";
+    font-size: 15px;
+    line-height: 1.7em;
+    list-style: none;
+    color: white;
+}
+
+#information-ikoner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    
+}
+
+#information-ikoner a {
+  width: 17%;
+}
+
+
+#footer-section-two {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+#footer-section-two h2 {
+    font-family: "HelveticaNeue-Bold";
+    font-size: 22px;
+    margin-bottom: 4px;
+    color: white;
+}
+
+#footer-section-two li {
+    font-family: "HelveticaNeue-Light";
+    font-size: 15px;
+    line-height: 1.7em;
+    list-style: none;
+    color: white;
+}
+
+#footer-section-two img {
+    width: 60%;
+    margin-top: 20px;
+}
+
+
+#footer-section-zero-computer{
+    display: none;
+}
+
+#information-ikoner-computer{
+    display: none;
+}
+
+#rethinker-logo{
+    width: 200px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#maps-icon{
+    margin-right: 10px;
+}
+
+#mail-icon{
+    margin-left: 10px;
+}
+
+.maps-and-mail{
+    margin-top: 20px;
+}
+
+
+
 /* ------------ Media query -------------- */
 
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 400px) {
     
+    /* ---- Media query footer ---- */ 
+
+    #footer-section-zero a {
+        margin: 10px;
+    }
+
+    #footer-section-zero img {
+        width: 100%;
+    }
+
+    #footer-section-one h2 {
+        font-size: 27px;
+    }
+
+    #footer-section-one li {
+        font-size: 18px;
+        line-height: 1.9em;
+    }
+
+    #footer-section-two h2 {
+        font-size: 27px;
+    }
+
+    #footer-section-two li {
+        font-size: 18px;
+        line-height: 1.9em;
+    }
+    
+
+    #information-ikoner a {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+}
+/* ---- Media query footer ---- */ 
+
+
+
+@media screen and (min-width: 460px) {
+
     #mobile-menu a {
         font-size: 3.2em;
     }
-    
+
 }
+/* ---- Media query footer slut ---- */
 
 @media screen and (min-width: 768px) {
-    
+
     #mobile-navigation {
         display: none;
     }
-    
+
     .desktop-navigation {
         display: block;
     }
+    }
+/* ---- Media query footer ---- */ 
     
+    
+    @media screen and (min-width: 1180px){
+    
+        #footer-section-zero{
+            background-color: black;
+        }
+        
+        #footer-section-one{
+            margin-top: 20px;
+        }
+    #footer-container{
+        height: 300px;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+    }
+    
+
+        #rethinker-logo{
+            width: 120%;
+            margin-top: 60px;
+            margin-left: -90px;
+            height: 60px;
+        }
+   
+    
+    #information-ikoner a {
+        width: 12%;   
+    }
+    
+    
+    #information-ikoner{
+        display: none;
+        
+    }
+    
+    #information-ikoner-computer{
+        display: block;
+        margin:40px;
+
+    }
+        
+        #logo-container{
+            display: flex;
+            flex-direction: row;
+            margin-top: 40px;
+        }
+        
+        #footer-section-two{
+            margin-right: 85px;
+        }
+        
+        #footer-section-two h2{
+            font-size: 2.3em;
+        }
+        
+        #footer-section-two li{
+            font-size: 1.2em;
+        }
+        
+        #footer-section-one h2{
+            font-size: 2.3em;
+        }
+    
+    
+        
+
+    
+/* ---- Media query footer slut ---- */ 
+    
+    
+    
+
 }
-
-
-
-
-
-
-
-
-
-
-
