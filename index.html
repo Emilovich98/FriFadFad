@@ -4,54 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FriFadFor.dk</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/content-style.css">
+    <title>Forside</title>
+    <link rel="stylesheet" href="css/main-styling.css">
+    <link rel="stylesheet" href="css/content-styling.css">
 </head>
 
 <body>
     <div id="wrapper">
         <header>
             <nav>
-               <!-- Mobile navigation -->
-                <div id="mobile-menu-logo">
-                    <img class="logo-image" src="images/frafadfor-icon-logo.png" alt="Logo">
-                </div>
-                <div class="mobile-burger">
-                    <div class="burger-line" id="burger-line-1"></div>
-                    <div class="burger-line" id="burger-line-2"></div>
-                    <div class="burger-line" id="burger-line-3"></div>
-                </div>
-                
-                <!-- Desktop navigation -->
-                <div id="right-menu">
-                    <div id="desktop-menu-logo">
-                        <img class="logo-image" src="images/frafadfor-icon-logo.png" alt="Logo">
+                <!-- Mobile-Navigation -->
+                <div id="mobile-navigation">
+                    <div id="mobile-logo">
+                        <img src="images/frifadfor-logo.png" alt="FriFadFor - Logo">
+                    </div>
+                    <div id="mobile-burger" onclick="showMobileNav()">
+                        <div class="mobile-burger-line" id="mobile-burger-line-1"></div>
+                        <div class="mobile-burger-line" id="mobile-burger-line-2"></div>
+                        <div class="mobile-burger-line" id="mobile-burger-line-3"></div>
+                    </div>
+                    <div id="mobile-menu">
+                        <ul>
+                            <li><a href="index.html">FORSIDE</a></li>
+                            <li><a href="forestillinger.html">FORESTILLINGER</a></li>
+                            <li><a href="bliv-frivillig.html">BLIV FRIVILLIG</a></li>
+                            <li><a href="om-teatret.html">OM TEATRET</a></li>
+                            <li><a href="praktisk-info.html">PRAKTISK INFO</a></li>
+                        </ul>
+                        <div id="mobile-menu-social-media">
+                            <div class="mobile-social-media-icon">
+                                <a href=""><img src="images/facebook-icon.svg" alt="Facebook - FriFadFor"></a>
+                            </div>
+                            <div class="mobile-social-media-icon">
+                                <a href=""><img src="images/instagram-icon.svg" alt="Instagram - FriFadFor"></a>
+                            </div>
+                            <div class="mobile-social-media-icon">
+                                <a href=""><img src="images/youtube-icon.svg" alt="Youtube - FriFadFor"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div id="left-menu">
-                    <div class="burger">
-                        <div class="burger-line" id="burger-line-1"></div>
-                        <div class="burger-line" id="burger-line-2"></div>
-                        <div class="burger-line" id="burger-line-3"></div>
+                <!-- Mobile-Navigation -->
+                <div class="desktop-navigation" id="desktop-navigation-left">
+                    <div id="left-menu">
+                        <div id="desktop-logo">
+                            <img src="images/frifadfor-logo.png" alt="FriFadFor - Logo">
+                        </div>
+                        <p id="menu-heading">FRI·FAD·FOR</p>
                     </div>
-                    <div class="social-media-section">
-                        <div class="social-media-icons">
-                            <img src="images/facebook-icon.svg" alt="Facebook-icon">
+                </div>
+                <div class="desktop-navigation" id="desktop-navigation-right">
+                    <div id="right-menu">
+                        <div id="desktop-burger" onclick="showDesktopNav()">
+                            <div class="desktop-burger-line" id="desktop-burger-line-1"></div>
+                            <div class="desktop-burger-line" id="desktop-burger-line-2"></div>
+                            <div class="desktop-burger-line" id="desktop-burger-line-3"></div>
                         </div>
-                        <div class="social-media-icons">
-                            <img src="images/instagram-icon.svg" alt="Instagram-icon">
+                        <div id="social-media-section">
+                            <div id="social-media-icons-white">
+                                <div class="social-media-icons">
+                                    <a href=""><img id="facebook-white" src="images/facebook-icon-white.svg" alt="Facebook-icon"></a>
+                                </div>
+                                <div class="social-media-icons">
+                                    <a href=""><img id="instagram-white" src="images/instagram-icon-white.svg" alt="Instagram-icon"></a>
+                                </div>
+                                <div class="social-media-icons">
+                                    <a href=""><img id="youtube-white" src="images/youtube-icon-white.svg" alt="Youtube-icon"></a>
+                                </div>
+                            </div>
+                            <div id="social-media-icons-black">
+                                <div class="social-media-icons">
+                                    <a href=""><img id="facebook-black" src="images/facebook-icon.svg" alt="Facebook-icon"></a>
+                                </div>
+                                <div class="social-media-icons">
+                                    <a href=""><img id="instagram-black" src="images/instagram-icon.svg" alt="Instagram-icon"></a>
+                                </div>
+                                <div class="social-media-icons">
+                                    <a href=""><img id="youtube-black" src="images/youtube-icon.svg" alt="Youtube-icon"></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="social-media-icons">
-                            <img src="images/youtube-icon.svg" alt="Youtube-icon">
-                        </div>
+                    </div>
+                    <div id="desktop-menu-links">
+                        <ul>
+                            <li><a href="index.html">FORSIDE</a></li>
+                            <li><a href="forestillinger.html">FORESTILLINGER</a></li>
+                            <li><a href="bliv-frivillig.html">BLIV FRIVILLIG</a></li>
+                            <li><a href="om-teatret.html">OM TEATRET</a></li>
+                            <li><a href="praktisk-info.html">PRAKTISK INFO</a></li>
+                        </ul>
+                    </div>
+                    <div id="arrow-down">
+                        <img src="images/arrow-down.svg" alt="Arrow down">
                     </div>
                 </div>
             </nav>
         </header>
         <main>
+            <div id="background-video">
+                <video autoplay muted loop id="desktop-background-video">
+                    <source src="video/desktop-video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+            <section id="forside-section-1">
+                <div id="forside-logo">
+                    <img src="images/frifadfor-logo.png" alt="FriFadFor Logo">
+                </div>
+                <h1 id="forside-heading"><span id="forside-heading-marking">FRITTER·FADØL</span><br>FORESTILLING</h1>
+                <button id="forside-video-knap">SE VIDEO</button>
+                <div id="mobile-arrow-container">
+                    <div id="arrow-down-mobile">
+                        <img src="images/arrow-down.svg" alt="Arrow down">
+                    </div>
+                </div>
+            </section>
+            <div id="dark-canvas-forside">
+                
+            </div>
         </main>
         <footer>
+
         </footer>
     </div>
     <script src="js/script.js"></script>

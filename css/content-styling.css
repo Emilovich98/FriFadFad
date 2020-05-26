@@ -1,0 +1,593 @@
+/* ------- generel styling ------- */
+
+main {}
+
+@media screen and (min-width: 768px) {
+    main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin: 0 auto;
+        z-index: -8;
+    }
+}
+
+/* ------- Styling af forside ------- */
+
+#dark-video-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+#background-video {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -9;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+#desktop-background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100%;
+    min-width: 100%;
+    display: block;
+}
+
+#forside-section-1 {}
+
+#forside-logo {
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    margin-top: 10vh;
+}
+
+#forside-logo img {
+    width: 100%;
+}
+
+#forside-heading {
+    font-family: "HelveticaNeue-CondensedBlack";
+    text-align: center;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 3em;
+    line-height: 0.9;
+    padding-top: 2vh;
+}
+
+#forside-heading-marking {
+    font-size: 35px;
+    color: transparent;
+    -webkit-text-stroke-width: 1.4px;
+    -webkit-text-stroke-color: white;
+}
+
+#forside-video-knap {
+    color: white;
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: #F8D560;
+    border-style: solid;
+    border-width: 5px;
+    font-size: 1.4em;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+    cursor: pointer;
+    font-family: "Helvetica Neue";
+    z-index: 110;
+}
+
+#forside-video-knap:hover {
+    background-color: #F8D560;
+    color: black;
+}
+
+#mobile-arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 88vh;
+    width: 100vw;
+}
+
+#arrow-down-mobile {
+    width: 30px;
+    height: 30px;
+}
+
+#arrow-down-mobile img {
+    width: 100%;
+}
+
+#dark-canvas-forside {
+    width: 100vw;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    background-color: black;
+    opacity: 80%;
+}
+
+/* ------- Styling af forestillinger ------- */
+
+#generel-heading {
+    font-family: "HelveticaNeue-CondensedBlack";
+    text-align: center;
+    font-size: 2.6em;
+    color: white;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.kommende-forestilling {}
+
+.poster {
+    width: 94%;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.poster-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+    background-image: url("../images/forestilling-poster.jpg");
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+}
+
+.hashtag-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.hashtag-text {
+    color: white;
+    background-color: #1A1A1A;
+    font-size: 1em;
+    padding-bottom: 4px;
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+    margin-left: 8px;
+    margin-top: 8px;
+    font-family: "Helvetica Neue";
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.hashtag-styling {
+    color: orange;
+}
+
+.poster-title-dato-container {
+    height: 100%;
+    margin-top: 30vh;
+}
+
+.poster-dato {
+    font-size: 1em;
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+    padding-left: 8px;
+    padding-bottom: 12px;
+}
+
+.poster-titel {
+    font-size: 2em;
+    font-family: "Helvetica Neue";
+    font-weight: 600;
+    padding-left: 8px;
+    padding-bottom: 12px;
+    color: white;
+}
+
+.text-backround {
+    background-color: #1A1A1A;
+    padding-bottom: 4px;
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+    color: white;
+}
+
+.poster-buttons {
+    width: 100%;
+    display: flex;
+}
+
+.buy-button {
+    width: 50%;
+    background-color: #9CF443;
+    border: none;
+    border-radius: 0px 0px 0px 15px;
+    color: #454545;
+    font-family: "Helvetica Neue";
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+}
+
+.buy-button:hover {
+    background-color: #72D908;
+}
+
+.read-more-button {
+    width: 50%;
+    height: 100%;
+    background-color: #454545;
+    border: none;
+    border-radius: 0px 0px 15px 0px;
+    color: white;
+    font-family: "Helvetica Neue";
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+
+}
+
+.read-more-button:hover {
+    background-color: #777777;
+}
+
+/* ------ Pop up til fremtidig forestilling ----- */
+
+.poster-popup-info {
+    background-color: rgb(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+}
+
+.poster-info-container {
+    width: 94vw;
+    height: 96vh;
+    background-color: #3E3E3E;
+    margin-top: 2vh;
+    border-radius: 15px;
+}
+
+.pop-up-top-container {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.close-button {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.close-button img {
+    width: 50%;
+    display: block;
+}
+
+.photo-text-devider {}
+
+.pop-up-image-container {
+    display: none;
+}
+
+.pop-up-text-container {}
+
+.pop-up-title {
+    font-family: "Helvetica Neue";
+    font-size: 2em;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.pop-up-description {
+    width: 100%;
+    height: 30vh;
+    overflow: scroll;
+}
+
+.pop-up-description p {
+    font-family: "Helvetica Neue";
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.6em;
+    margin: 10px;
+    color: white;
+}
+
+.description-line {
+    border-color: #222222;
+    border-style: solid;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pop-up-dato {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up-dato p {
+    font-family: "Helvetica Neue";
+    font-weight: 300;
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 100px;
+    border-color: #707070;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.pup-up-buy-button {
+    background-color: #9CF443;
+    width: 100%;
+    margin-top: 5px;
+    border-style: none;
+    border-radius: 8px;
+    color: #454545;
+    font-family: "Helvetica Neue";
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.pop-up-praktisk-info {
+    height: 30vh;
+    width: 100%;
+    border-radius: 0px 0px 15px 15px;
+    overflow: scroll;
+}
+
+.pop-up-praktisk-devider {
+    display: flex;
+    margin-top: 7px;
+    margin-bottom: 20px;
+
+}
+
+.position-text-left {
+    width: 45%;
+    padding-left: 10px;
+    font-weight: 400;
+    font-family: "Helvetica Neue";
+    color: white;
+    font-size: 1em;
+}
+
+.position-text-right {
+    font-family: "Helvetica Neue";
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+    padding-right: 10px;
+    letter-spacing: 1px;
+}
+
+
+.pop-up-praktisk-devider ul {}
+
+.pop-up-praktisk-devider li {
+    list-style: none;
+    padding-bottom: 2px;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.pop-up-praktisk-line {
+    border-color: #222222;
+    border-style: solid;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-width: 1px;
+    border-radius: 1px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* ------- Styling af Frivillig ------- */
+
+#dark-canvas {
+    height: 200vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+/* ------- media-query ------- */
+
+@media screen and (min-width: 375px) {
+
+    #forside-heading {
+        font-size: 3.6em;
+    }
+
+    #forside-heading-marking {
+        font-size: 45px;
+    }
+
+    #forside-logo {
+        margin-top: 15vh;
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+    #forside-heading {
+        font-size: 4.4em;
+    }
+
+    #forside-heading-marking {
+        font-size: 50px;
+    }
+
+    #forside-logo {
+        margin-top: 20vh;
+    }
+
+}
+
+@media screen and (min-width: 550px) {
+
+    #generel-heading {
+        font-size: 4em;
+    }
+
+    .poster {
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width: 650px) {
+
+    #forside-heading {
+        font-size: 6em;
+    }
+
+    #forside-heading-marking {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    #forside-logo {
+        width: 200px;
+        margin-top: 20vh;
+    }
+
+    #generel-heading {
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+
+    .poster-info-container {
+        width: 72vw;
+        height: 80vh;
+    }
+
+    .poster-popup-info {
+        z-index: 7;
+        align-items: center;
+    }
+    
+    #mobile-arrow-container {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 800px) {}
+
+@media screen and (min-width: 900px) {
+
+    .poster-info-container {
+        width: 78vw;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    #forside-logo {
+        width: 200px;
+    }
+
+    #forside-heading {
+        font-size: 8em;
+        line-height: 0.9;
+    }
+
+    #forside-heading-marking {
+        font-size: 70px;
+    }
+
+    #generel-heading {
+        font-size: 5em;
+    }
+
+    .photo-text-devider {
+        display: flex;
+
+    }
+
+    .pop-up-image-container {
+        display: block;
+        height: 65vh;
+        width: 48%;
+        margin: 1%;
+        border-radius: 15px;
+        overflow: hidden;
+        background-image: url(../images/forestilling-poster.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+
+    .pop-up-text-container {
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {}
