@@ -37,74 +37,6 @@
 
 
 
-#om-teatret-underside{
-    position: absolute;
-    z-index: 2;
-    align-content: center;
-}
-
-#overskrift-historie{
-    font-family: "HelveticaNeue-CondensedBlack";
-    font-size: 100px;
-    letter-spacing: 4px;
-    margin-top: 270px;
-    text-align: center;
-    color: white;
-}
-
-#historie-text{
-    margin-top: 20px;
-    text-align: center;
-    margin-left: 200px;
-    margin-right: 200px;
-    color: white;
-    line-height: 30px;
-    font-family: lato;
-    font-weight: lighter;
-
-}
-
-#buttons{
-    justify-content: center;
-    display: flex;
-    margin-top: 70px;
-    
-}
-
-.Btn{
-    background: #F8D560;
-    padding: 10px 45px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    margin-left: 10px;
-    font-family: "HelveticaNeue";
-    font-weight: 600; 
-    font-size: 15px;
-}
-
-.overlay{
-    background: #000000;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 90%;
-}
-
-
-#mission-text, #vision-text, #value-text{
-   
-    position: absolute;
-    opacity: 0;
-}
-
-#overskrift-mission, #overskrift-vision, #overskrift-value{
-    
-    position: absolute;
-    opacity: 0;
-}
 
 
 
@@ -198,6 +130,56 @@ h2{
     width:  150px;
     height: 150px;
     object-fit: contain;
+}
+
+@media screen and (max-width: 540px){
+    
+    #flex-container-one{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    
+    #flex-container-two{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-right: 20px;
+        margin-top: 40px;
+    }
+    
+    .img-icons{
+        width: 50px;
+    }
+    
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #img-devider{
+        margin-top: 740px;
+    }
+    
+    #samarbejdspartnere-text{
+        font-size: 20px;
+        margin: 0;
+    }
+    
+    #sam-heading{
+        font-size: 25px;
+    }
+    
+    .img-partner-logo{
+        width: 100px;
+    }
+    
+    #heading-one{
+        font-size: 50px;
+    }
+    
+    #samarbejdspartnere-text{
+        margin-top: 20px;
+    }
 }
 
 
