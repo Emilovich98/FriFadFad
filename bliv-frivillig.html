@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="stylesheet" href="css/main-styling.css">
+    <link rel="stylesheet" href="css/content-styling.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <!-- Mobile-Navigation -->
+                <div id="mobile-navigation">
+                    <div id="mobile-logo">
+                        <img src="images/frifadfor-logo.png" alt="FriFadFor - Logo">
+                    </div>
+                    <div id="mobile-burger" onclick="showMobileNav()">
+                        <div class="mobile-burger-line" id="mobile-burger-line-1"></div>
+                        <div class="mobile-burger-line" id="mobile-burger-line-2"></div>
+                        <div class="mobile-burger-line" id="mobile-burger-line-3"></div>
+                    </div>
+                    <div id="mobile-menu">
+                        <ul>
+                            <li><a href="index.html">FORSIDE</a></li>
+                            <li><a href="forestillinger.html">FORESTILLINGER</a></li>
+                            <li><a href="bliv-frivillig.html">BLIV FRIVILLIG</a></li>
+                            <li><a href="om-teatret.html">OM TEATRET</a></li>
+                            <li><a href="praktisk-info.html">PRAKTISK INFO</a></li>
+                        </ul>
+                        <div id="mobile-menu-social-media">
+                            <div class="mobile-social-media-icon">
+                                <a href=""><img src="images/facebook-icon.svg" alt="Facebook - FriFadFor"></a>
+                            </div>
+                            <div class="mobile-social-media-icon">
+                                <a href=""><img src="images/instagram-icon.svg" alt="Instagram - FriFadFor"></a>
+                            </div>
+                            <div class="mobile-social-media-icon">
+                                <a href=""><img src="images/youtube-icon.svg" alt="Youtube - FriFadFor"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile-Navigation -->
+                <div class="desktop-navigation" id="desktop-navigation-left">
+                    <div id="left-menu">
+                        <div id="desktop-logo">
+                            <img src="images/frifadfor-logo.png" alt="FriFadFor - Logo">
+                        </div>
+                        <p id="menu-heading">FRI·FAD·FOR</p>
+                    </div>
+                </div>
+                <div class="desktop-navigation" id="desktop-navigation-right">
+                    <div id="right-menu">
+                        <div id="desktop-burger" onclick="showDesktopNav()">
+                            <div class="desktop-burger-line" id="desktop-burger-line-1"></div>
+                            <div class="desktop-burger-line" id="desktop-burger-line-2"></div>
+                            <div class="desktop-burger-line" id="desktop-burger-line-3"></div>
+                        </div>
+                        <div id="social-media-section">
+                            <div id="social-media-icons-white">
+                                <div class="social-media-icons">
+                                    <a href=""><img id="facebook-white" src="images/facebook-icon-white.svg" alt="Facebook-icon"></a>
+                                </div>
+                                <div class="social-media-icons">
+                                    <a href=""><img id="instagram-white" src="images/instagram-icon-white.svg" alt="Instagram-icon"></a>
+                                </div>
+                                <div class="social-media-icons">
+                                    <a href=""><img id="youtube-white" src="images/youtube-icon-white.svg" alt="Youtube-icon"></a>
+                                </div>
+                            </div>
+                            <div id="social-media-icons-black">
+                                <div class="social-media-icons">
+                                    <a href=""><img id="facebook-black" src="images/facebook-icon.svg" alt="Facebook-icon"></a>
+                                </div>
+                                <div class="social-media-icons">
+                                    <a href=""><img id="instagram-black" src="images/instagram-icon.svg" alt="Instagram-icon"></a>
+                                </div>
+                                <div class="social-media-icons">
+                                    <a href=""><img id="youtube-black" src="images/youtube-icon.svg" alt="Youtube-icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="desktop-menu-links">
+                        <ul>
+                            <li><a href="index.html">FORSIDE</a></li>
+                            <li><a href="forestillinger.html">FORESTILLINGER</a></li>
+                            <li><a href="bliv-frivillig.html">BLIV FRIVILLIG</a></li>
+                            <li><a href="om-teatret.html">OM TEATRET</a></li>
+                            <li><a href="praktisk-info.html">PRAKTISK INFO</a></li>
+                        </ul>
+                    </div>
+                    <div id="arrow-down">
+                        <img src="images/arrow-down.svg" alt="Arrow down">
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="background-video">
+                <video autoplay muted loop id="desktop-background-video">
+                    <source src="video/desktop-video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+
+            <div id="dark-canvas">
+                <h1>FRIVILLIG</h1>
+                <div id="volunteer-video-container">
+                <iframe id="volunteer-video" width="560" height="315" src="https://www.youtube.com/embed/_J4hqkpo8yo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div id="yellow-canvas">
+                   <div id="heading-container">
+                    <h1><span id="heading-start">BLIV EN DEL AF</span> <span id="heading-end">FAMILIEN</span></h1>
+                    </div>
+                    <div id="yellow-canvas-container">
+                        <div id="text-content">
+                            <p>Som frivillig hos os får du mulighed for at medvirke til fornyelse og udvikling af teaterproduktioner. Vi skaber ikke bare teaterstykker, men altomsluttende oplevelser, som tager gæsterne i hånden allerede inden forestillingen begynder. Med tanker fra oplevelsesdesign og kaospilot tricks skaber vi arrangementer sammen som et hold. Vi er alle meget forskellige, med helt forskellige baggrunde og interesser – fælles deler vi ønsket om vha. kreativitet, en ekstra indsats og kærlighed for kultur og teater, at skabe en god oplevelse hver gang.
+                                Når du tilmelder dig som frivillig indlulles du samtidig i et større frivillighedsnetværk, som sikrer gode forhold og kan hjælpe dig med at finde endnu flere spændende frivillighedsprojekter.</p>
+                        </div>
+                        <div id="input-label">
+                            <form action="mailto:jeppe@kaospilot.dk" method="post" enctype="text/plain">
+                               <div id="name-container">
+                               <div><p>NAVN</p></div>
+                                <textarea name="Navn" class="name" cols="47" rows="1"></textarea><br>
+                                </div>
+                                
+                                <div id="mail-container">
+                                <div><p>MAIL</p></div>
+                                <textarea name="Mail" class="name" cols="47" rows="1"></textarea><br>
+                                </div>
+                                
+                                <div id="dm-container">
+                                <div id="besked-center"><p>BESKED</p></div>
+                                <textarea name="Besked" id="input" cols="47" rows="10"></textarea>
+                                </div>
+                                <div id="send-button">
+                                <input id="submit" type="submit" value="SEND">
+                                </div>
+                            </form>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
