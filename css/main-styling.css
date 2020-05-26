@@ -302,6 +302,7 @@ nav {
     list-style: none;
     margin-bottom: 20px;
     margin-top: 20px;
+    text-align: center;
 }
 
 #desktop-menu-links a {
