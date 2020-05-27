@@ -1,6 +1,8 @@
 /* ------- generel styling ------- */
 
-
+.main-canvas-section {
+    width: 100%;
+}
 
 /* ------- Styling af forside ------- */
 
@@ -496,6 +498,11 @@
 
 @media screen and (min-width: 768px) {
 
+    .main-canvas-section {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
     #forside-section-1 {
         padding-left: 100px;
         padding-right: 100px;
@@ -507,15 +514,15 @@
         width: 180px;
         height: 120px;
     }
-    
+
     #forside-heading {
         margin-top: 5vh;
     }
-    
+
     #forside-video-knap-contaioner {
         margin-top: 5vh;
     }
-    
+
     #mobile-arrow-down {
         display: none;
     }
@@ -572,7 +579,7 @@
 }
 
 @media screen and (min-width: 1000px) {
-    
+
     #forside-heading-1 {
         font-size: 2.9em;
     }
@@ -580,7 +587,7 @@
     #forside-heading-2 {
         font-size: 5em;
     }
-    
+
     #generel-heading {
         font-size: 5em;
     }
