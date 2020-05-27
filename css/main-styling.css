@@ -9,7 +9,6 @@
 body {}
 
 #wrapper {
-    height: 300vh;
     z-index: -10;
     position: absolute;
     width: 100%;
@@ -18,13 +17,9 @@ body {}
     background-color: black;
 }
 
-header {
-    
-}
+header {}
 
-nav {
-    
-}
+nav {}
 
 #mobile-navigation {
     height: 9vh;
@@ -230,8 +225,7 @@ nav {
     transform: rotate(45deg) translate(-7px, -7px);
 }
 
-#social-media-section {
-}
+#social-media-section {}
 
 #social-media-icons-white {
     visibility: visible;
@@ -320,35 +314,265 @@ nav {
     transition: 0.3s;
 }
 
+/* ------------- Footer -------------- */
+
+footer {
+    background-color: black;
+    width: 100vw;
+}
+
+#footer-social-media-1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    width: 100%;
+
+}
+
+#footer-social-media-1 a {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#footer-social-media-1 img {
+    width: 100%;
+}
+
+.footer-line {
+    width: 90%;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0 auto;
+}
+
+#footer-container {}
+
+#footer-section {}
+
+#footer-text-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2vh;
+}
+
+#footer-text-1 h6 {
+    font-family: "Helvetica Neue";
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#footer-text-1 ul {}
+
+#footer-text-1 li {
+    font-family: "Helvetica Neue";
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    list-style: none;
+}
+
+#info-icons {
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.info-icon-size {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.maps-and-mail {
+    width: 100%;
+}
+
+#footer-text-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2vh;
+}
+
+#footer-text-2 h6 {
+    font-family: "Helvetica Neue";
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+#footer-text-2 ul {}
+
+#footer-text-2 li {
+    font-family: "Helvetica Neue";
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    list-style: none;
+}
+
+#desktop-line {
+    display: none;
+}
+
+#footer-social-media-2 {
+    display: none;
+}
+
+#footer-social-media-2 a {}
+
+#footer-social-media-2 img {}
+
+#rethinker-logo-container {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#rethinker-logo-container img {
+    width: 100%;
+}
+
 /* ------------ Media query -------------- */
 
 @media screen and (min-width: 460px) {
-    
+
     #mobile-menu a {
         font-size: 3.2em;
     }
-    
+
+    #rethinker-logo-container {
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 550px) {
+
+    #rethinker-logo-container {
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 650px) {
+
+    #rethinker-logo-container {
+        width: 40%;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
-    
+
     #mobile-navigation {
         display: none;
     }
-    
+
     .desktop-navigation {
         display: block;
     }
-    
+
+    #footer-social-media-1 {
+        display: none;
+    }
+
+    #mobile-line {
+        display: none;
+    }
+
+    #footer-container {
+        display: flex;
+        justify-content: center;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .info-icon-size {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .footer-section {
+        width: 30vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    #footer-text-1 {
+        width: 100%;
+    }
+
+    #footer-text-2 {
+        width: 100%;
+    }
+
+    #rethinker-logo-container {
+        width: 30vw;
+        margin: 0;
+    }
+
+    #rethinker-logo-container img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #desktop-line {
+        display: block;
+        width: 70%;
+    }
+
+    #footer-social-media-2 {
+        display: flex;
+        justify-content: center;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        width: 100%;
+    }
+
+    #footer-social-media-2 a {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #footer-social-media-2 img {
+        width: 100%;
+    }
 }
 
+@media screen and (min-width: 1200px) {
+    
+    #rethinker-logo-container img {
+        width: 70%;
+    }
+}
 
-
-
-
-
-
-
-
-
-
+@media screen and (min-width: 1300px) {
+    
+    #rethinker-logo-container img {
+        width: 60%;
+    }
+    
+}
