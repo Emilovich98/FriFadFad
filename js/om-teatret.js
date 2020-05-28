@@ -1,3 +1,4 @@
+/* ------------ Show and hide elements with buttons ------------ */
 let historieBtn = document.getElementById("btn1");
 let missionBtn = document.getElementById("btn2");
 let visionBtn = document.getElementById("btn3");
@@ -46,4 +47,15 @@ visionBtn.addEventListener("click", showVision);
 valueBtn.addEventListener("click", showValue);
 
 
+/* ------------ highlight active button ------------ */
+let buttonContainer = document.getElementById("about-buttons");
+let buttonHighlight = buttonContainer.getElementsByClassName("about-btn");
+
+for (let i = 0; i < buttonHighlight.length; i++) {
+  buttonHighlight[i].addEventListener("click", function() {
+  let current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
 

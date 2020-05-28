@@ -1159,7 +1159,7 @@
         outline: none;
     }
     
-    .about-btn:hover {
+    .active, .about-btn:hover {
         background-color: beige;
     }
     
