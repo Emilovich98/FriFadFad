@@ -1,11 +1,11 @@
-/* ------- generel styling ------- */
+/* generel styling */
 
 .main-canvas-section {
     width: 100%;
     background-color: rgb(0, 0, 0, 0.8);
 }
 
-/* ------- Styling af forside ------- */
+/* Styling af forside */
 
 #dark-video-overlay {
     height: 100vh;
@@ -189,7 +189,7 @@
     text-align: center;
 }
 
-/* --Forside-forestilling-- */
+/* Forside forestilling */
 
 #viderestil-button {
     font-family: "Helvetica Neue";
@@ -219,7 +219,7 @@
     padding-bottom: 4vh;
 }
 
-/* ------- Styling af forestillinger ------- */
+/* Styling af forestillinger */
 
 #generel-heading {
     font-family: "HelveticaNeue-CondensedBlack";
@@ -353,7 +353,7 @@
     background-color: #777777;
 }
 
-/* ------ Pop up til fremtidig forestilling ----- */
+/* Pop up til fremtidig forestilling */
 
 .poster-popup-info {
     background-color: rgb(0, 0, 0, 0.8);
@@ -530,7 +530,7 @@
     margin-bottom: 10px;
 }
 
-/* ------- Styling af Frivillig ------- */
+/* Styling af Frivillig */
 
 #mobile-menu-dark-overlay {
     background-color: rgb(0, 0, 0, 0.8);
@@ -705,7 +705,7 @@
     color: #F8D560;
 }
 
-/* ------- Styling af Om teatret ------- */
+/* Styling af Om teatret */
 
 #about-content {}
 
@@ -744,7 +744,7 @@
 
 .about-btn {}
 
-/* ------- Styling af Praktisk Info ------- */
+/* Styling af Praktisk Info */
 
 #content-praktisk-info {}
 
@@ -870,13 +870,17 @@
     width: 55%;
 }
 
-#vig-bort {}
+#vig-bort-1 {}
+
+#vig-bort-2 {}
+
+#vig-bort-3 {}
 
 #show-my-ass {
     display: none;
 }
 
-/* ------- media-query ------- */
+/* media-query */
 
 @media screen and (min-width: 375px) {
 
@@ -946,6 +950,10 @@
         max-width: 800px;
     }
 
+    iframe {
+        border-width: 0px;
+    }
+
     #heading-container h1 {
         font-size: 2.8em;
     }
@@ -974,6 +982,10 @@
     .kategori-heading {
         font-size: 5em;
     }
+    
+     #frivillig-heading {
+        font-size: 4em;
+    }
 
 }
 
@@ -995,7 +1007,15 @@
         font-size: 3.4em;
     }
 
-    #vig-bort {
+    #vig-bort-1 {
+        display: none;
+    }
+
+    #vig-bort-2 {
+        display: none;
+    }
+
+    #vig-bort-3 {
         display: none;
     }
 
@@ -1026,6 +1046,8 @@
     #tiny-pukk {
         width: 55%;
     }
+
+   
 }
 
 @media screen and (min-width: 768px) {
@@ -1158,11 +1180,12 @@
         cursor: pointer;
         outline: none;
     }
-    
-    .active, .about-btn:hover {
+
+    .active,
+    .about-btn:hover {
         background-color: beige;
     }
-    
+
     .about-btn:active {
         background-color: beige;
     }
@@ -1216,7 +1239,7 @@
     .poster-info-container {
         width: 78vw;
     }
-    
+
     #about-content {
         height: 75vh;
     }
@@ -1263,6 +1286,18 @@
 
     #pertnere-container p {
         max-width: 820px;
+    }
+
+    #heading-one {
+        font-size: 5em;
+    }
+
+    #pertnere-container {
+        font-size: 1.2em;
+    }
+    
+    #frivillig-heading {
+        font-size: 4.6em;
     }
 }
 
