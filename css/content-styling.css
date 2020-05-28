@@ -179,7 +179,7 @@
 
 #koncept-paragraph {
     color: white;
-    font-family: "lato";
+    font-family: "Helvetica Neue";
     font-weight: 100;
     width: 94%;
     margin: 0 auto;
@@ -641,14 +641,14 @@
 }
 
 #text-content {
-    font-family: "lato";
+    font-family: "Helvetica Neue";
     width: 94%;
     margin: 0 auto;
     padding-bottom: 4vh;
 }
 
 #bliv-frivillig-text {
-    font-family: "lato";
+    font-family: "Helvetica Neue";
     line-height: 1.5;
     font-weight: 300;
     line-height: 1.8em;
@@ -689,7 +689,8 @@
     background-color: #3D3D3D;
     width: 100%;
     font-size: 1.2em;
-    font-family: "lato";
+    font-family: "Helvetica Neue";
+    border-radius: 0px 5px 5px 0px;
     color: white;
 
 }
@@ -723,7 +724,7 @@
     border-style: none;
     border-radius: 0px 0px 5px 5px;
     font-size: 1.2em;
-    font-family: "lato";
+    font-family: "Helvetica Neue";
     color: white;
 
 }
@@ -774,7 +775,7 @@
 
 .about-text {
     color: white;
-    font-family: "lato";
+    font-family: "Helvetica Neue";
     padding-bottom: 4vh;
     line-height: 1.8em;
     font-weight: 300;
@@ -885,7 +886,7 @@
 
 #pertnere-container p {
     color: white;
-    font-family: lato;
+    font-family: "Helvetica Neue";
     width: 96%;
     margin: 0 auto;
     font-weight: 300;
