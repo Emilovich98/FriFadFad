@@ -545,7 +545,7 @@
 }
 
 #volunteer-video-container {
-    padding-bottom: 20vh;
+    padding-bottom: 10vh;
 }
 
 #volunteer-video {
@@ -593,14 +593,14 @@
 }
 
 #text-content {
-    font-family: lato;
+    font-family: "lato";
     width: 94%;
     margin: 0 auto;
     padding-bottom: 4vh;
 }
 
 #bliv-frivillig-text {
-    font-family: lato;
+    font-family: "lato";
     line-height: 1.5;
     font-weight: 300;
     line-height: 1.8em;
@@ -641,7 +641,7 @@
     background-color: #3D3D3D;
     width: 100%;
     font-size: 1.2em;
-    font-family: lato;
+    font-family: "lato";
     color: white;
 
 }
@@ -675,7 +675,7 @@
     border-style: none;
     border-radius: 0px 0px 5px 5px;
     font-size: 1.2em;
-    font-family: lato;
+    font-family: "lato";
     color: white;
 
 }
@@ -704,6 +704,45 @@
     background-color: black;
     color: #F8D560;
 }
+
+/* ------- Styling af Om teatret ------- */
+
+#about-content {}
+
+.kategori-tab {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.kategori-heading {
+    color: white;
+    font-family: "HelveticaNeue-CondensedBlack";
+    padding-bottom: 2vh;
+    font-weight: 500;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 8vh;
+}
+
+.about-text {
+    color: white;
+    font-family: "lato";
+    padding-bottom: 4vh;
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+.about-images {}
+
+.about-images img {
+    width: 100%;
+}
+
+#about-buttons {
+    display: none;
+}
+
+.about-btn {}
 
 /* ------- Styling af Praktisk Info ------- */
 
@@ -803,7 +842,9 @@
     margin: 0 auto;
     font-weight: 300;
     text-align: center;
-    line-height: 1.6em;
+    line-height: 2em;
+    width: 90%;
+    font-size: 1.2em;
 }
 
 .img-devider {
@@ -880,6 +921,10 @@
         width: 35%;
     }
 
+    .kategori-heading {
+        font-size: 3.8em;
+    }
+
 }
 
 @media screen and (min-width: 500px) {
@@ -924,6 +969,10 @@
 
     #volunteer-video {
         height: 50vh;
+    }
+
+    .kategori-heading {
+        font-size: 5em;
     }
 
 }
@@ -1045,6 +1094,82 @@
     #heading-one {
         padding-top: 12vh;
     }
+
+    .about-images {
+        display: none;
+    }
+
+    #about-content {
+        padding-top: 20vh;
+        max-width: 850px;
+        margin: 0 auto;
+        height: 80vh;
+    }
+
+    .kategori-tab {
+        width: 98%;
+        padding-bottom: 4vh;
+    }
+
+    .kategori-heading {
+        padding-bottom: 6vh;
+        padding-top: 0vh;
+    }
+
+    .about-text {
+        padding-bottom: 0vh;
+        font-size: 1.1em;
+    }
+
+    #kategori-tab-historie {
+        display: block;
+    }
+
+    #kategori-tab-mission {
+        display: none;
+    }
+
+    #kategori-tab-vision {
+        display: none;
+    }
+
+    #kategori-tab-value {
+        display: none;
+    }
+
+    #about-buttons {
+        display: flex;
+        justify-content: center;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    .about-btn {
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 40px;
+        width: 25%;
+        background-color: #F8D560;
+        border-style: none;
+        border-radius: 0px 0px 10px 10px;
+        font-family: "Helvetica Neue";
+        font-weight: 800;
+        font-size: 1em;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    .about-btn:hover {
+        background-color: beige;
+    }
+    
+    .about-btn:active {
+        background-color: beige;
+    }
+
+    #canvas-height {
+        height: 100vh;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -1068,6 +1193,10 @@
         height: 40vh;
     }
 
+    .kategori-heading {
+        font-size: 5.8em;
+    }
+
 }
 
 @media screen and (min-width: 900px) {
@@ -1086,6 +1215,10 @@
 
     .poster-info-container {
         width: 78vw;
+    }
+    
+    #about-content {
+        height: 75vh;
     }
 }
 
@@ -1126,6 +1259,10 @@
     #volunteer-video {
         height: 55vh;
         max-width: 1000px;
+    }
+
+    #pertnere-container p {
+        max-width: 820px;
     }
 }
 
