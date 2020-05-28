@@ -353,6 +353,54 @@
     background-color: #777777;
 }
 
+#fremtidig-forestilling-container {
+    margin: 0 auto;
+    margin-top: 2vh;
+    margin-bottom: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fremtidig-forestilling {
+    width: 94%;
+    height: 100px;
+    border-radius: 15px;
+    background-color: #454545;
+    padding: 1vh;
+    margin-bottom: 2vh;
+    max-width: 700px;
+}
+
+.fremtidig-forestilling-indhold {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#styling-top {
+    background-color: #1A1A1A;
+    border-radius: 15px;
+    height: 60%;
+}
+
+#styling-bottom {
+    height: 40%;
+}
+
+.forestilling-tid {
+    color: white;
+    font-family: "Helvetica Neue";
+    font-size: 1.1em;
+}
+
+.foresttilling-kommer {
+    color: white;
+    font-family: "Helvetica Neue";
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
 /* Pop up til fremtidig forestilling */
 
 .poster-popup-info {
@@ -975,6 +1023,10 @@
         width: 90%;
     }
 
+    .fremtidig-forestilling {
+        width: 90%;
+    }
+
     #volunteer-video {
         height: 50vh;
     }
@@ -982,8 +1034,8 @@
     .kategori-heading {
         font-size: 5em;
     }
-    
-     #frivillig-heading {
+
+    #frivillig-heading {
         font-size: 4em;
     }
 
@@ -1047,7 +1099,7 @@
         width: 55%;
     }
 
-   
+
 }
 
 @media screen and (min-width: 768px) {
@@ -1295,7 +1347,7 @@
     #pertnere-container {
         font-size: 1.2em;
     }
-    
+
     #frivillig-heading {
         font-size: 4.6em;
     }

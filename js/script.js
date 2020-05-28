@@ -56,14 +56,9 @@ function showDesktopNav() {
     desktopBurger.classList.toggle("toggle");
 }
 
-// show forestillinger info
 
 
-function showForestillingInfo() {
-    
-    
-    
-}
+
 
 
 
