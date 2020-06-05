@@ -57,6 +57,24 @@ function showDesktopNav() {
 }
 
 
+const topLogo = document.querySelector("#top-logo");
+
+window.addEventListener("scroll", scrollFunction);
+
+function scrollFunction(){
+    if (window.pageYOffset > 300){
+        topLogo.style.opacity = "99";
+    }
+    else{
+        topLogo.style.opacity = "0";
+    }
+}
+
+
+
+
+
+
 
 
 
