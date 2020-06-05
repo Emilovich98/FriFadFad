@@ -170,6 +170,11 @@ nav {}
     padding: 3px;
 }
 
+#top-logo{
+    transition: opacity .4s;
+    opacity: 0;
+}
+
 #menu-heading {
     writing-mode: vertical-rl;
     text-orientation: upright;
