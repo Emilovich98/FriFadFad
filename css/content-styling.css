@@ -34,7 +34,16 @@
     transform: translate(-50%, -50%);
     min-height: 100%;
     min-width: 100%;
-    display: block;
+    display: none;
+}
+
+#gif-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100%;
+    min-width: 100%;
 }
 
 #forside-video-pop-up {
@@ -68,6 +77,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+iframe {
+    border-style: none;
 }
 
 #koncept-video {
@@ -999,10 +1012,6 @@
         max-width: 800px;
     }
 
-    iframe {
-        border-width: 0px;
-    }
-
     #heading-container h1 {
         font-size: 2.8em;
     }
@@ -1011,7 +1020,6 @@
         font-size: 2em;
         line-height: 0.8em;
     }
-
 }
 
 @media screen and (min-width: 550px) {
@@ -1245,6 +1253,14 @@
 
     #canvas-height {
         height: 100vh;
+    }
+
+    #desktop-background-video {
+        display: block;
+    }
+    
+    #gif-video {
+        display: none;
     }
 }
 
