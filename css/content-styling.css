@@ -792,6 +792,8 @@ iframe {
     padding-bottom: 4vh;
     line-height: 1.8em;
     font-weight: 300;
+    text-align: center;
+    
 }
 
 .about-images {}
