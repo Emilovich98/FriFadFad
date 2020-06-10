@@ -628,7 +628,6 @@ iframe {
 }
 
 .image-gallery a::before {
-    content: '';
     width: 100%;
     height: 100%;
     top: 0;
@@ -1554,8 +1553,8 @@ iframe {
     }
     
     #image-gallery-container{
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     
