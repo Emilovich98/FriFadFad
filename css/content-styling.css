@@ -417,7 +417,7 @@ iframe {
 
 #styling-top {
     background-color: #1A1A1A;
-    border-radius: 15px;
+    border-radius: 8px;
     height: 60%;
 }
 
@@ -429,6 +429,7 @@ iframe {
     color: white;
     font-family: "Helvetica Neue";
     font-size: 1.1em;
+    text-transform: uppercase;
 }
 
 .foresttilling-kommer {

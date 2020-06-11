@@ -116,111 +116,12 @@
             <div id="dark-video-overlay"></div>
             <h1 id="generel-heading">FORESTILLINGER</h1>
             <section class="kommende-forestilling">
-                <!-- Her ligger den første poster -->
-                <div class="poster">
-                    <div class="poster-content" onclick="openPopUp()">
-                        <div class="poster-image-container">
-                            <img src="images/forestilling-poster.jpg" alt="poster-image">
-                        </div>
-                        <div class="poster-information">
-                            <div class="hashtag-container">
-                                <!-- Her skrives hashtags. Dubliker linjen hvis der skal flere hashtags på. -->
-                                <p class="hashtag-text"><span class="hashtag-styling">#</span>Hjertesorg</p>
-                                <p class="hashtag-text"><span class="hashtag-styling">#</span>Hjertesorg</p>
-                                <p class="hashtag-text"><span class="hashtag-styling">#</span>Hjertesorg</p>
-                                <p class="hashtag-text"><span class="hashtag-styling">#</span>Hjertesorg</p>
-                            </div>
-                            <div class="poster-title-dato-container">
-                                <!-- Her skrives dato og titel -->
-                                <p class="poster-dato"><span class="text-backround">30.08.2020</span></p>
-                                <h3 class="poster-titel"><span class="text-backround">FRITTER FADØL &amp; FØLJETON</span></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="poster-buttons">
-                        <a class="buy-button" href="https://frifadfor-1.ticketbutler.io/da/events/">KØB</a>
-                        <button class="read-more-button" onclick="openPopUp()">LÆS MERE</button>
-                    </div>
-                    <!-- Pop up vindue -->
-                    <div class="poster-popup-info">
-                        <div class="poster-info-container">
-                            <div class="pop-up-top-container">
-                                <button class="close-button" onclick="closePopUp()">
-                                    <img src="images/x-icon.svg" alt="Close-icon">
-                                </button>
-                            </div>
-                            <div class="photo-text-devider">
-                                <div class="pop-up-image-container">
-
-                                </div>
-                                <div class="pop-up-text-container">
-                                    <!-- Herunder skrives titel på forestilling -->
-                                    <h3 class="pop-up-title">FRITTER FADØL &amp; FØLJETON</h3>
-                                    <div class="pop-up-description">
-                                        <!-- Herunder skrives beskrivelsen på forestillingen -->
-                                        <p>
-                                            Vi glæder os til at slå dørene op for Episode 2 af Fritter, Fadøl &amp; Føljeton d. 30. august 2020! Vores føljeton består af 3 episoder, som er skrevet af hver sin dramatiker fra Den Danske Scenekunstskole i Aarhus over temaet frigørelse. Episoderne i Føljetonen kan både ses enkeltvis og som et samlet værk. Fortællingerne vil tage udgangspunkt i den samme havneby og bliver bundet yderligere sammen med kunstneriske referencepunkter, som dramatikerne sammen har valgt.
-                                        </p>
-                                    </div>
-                                    <hr class="description-line">
-                                    <div class="pop-up-dato">
-                                        <!-- Herunder skrives dato for forestllingen -->
-                                        <p>30.08.2020</p>
-                                        <a class="pup-up-buy-button" href="https://frifadfor-1.ticketbutler.io/da/events/">KØB</a>
-                                    </div>
-                                    <div class="pop-up-praktisk-info">
-                                        <div class="pop-up-praktisk-devider">
-                                            <p class="position-text-left">Der åbnes:</p>
-                                            <!-- Herunder skrives klokkeslæt -->
-                                            <p class="position-text-right">kl.16:00</p>
-                                        </div>
-                                        <hr class="pop-up-praktisk-line">
-                                        <div class="pop-up-praktisk-devider">
-                                            <p class="position-text-left">Manuskript:</p>
-                                            <!-- Herunder skrives manuskriptforfatter -->
-                                            <p class="position-text-right">Ingeborg Bjarno Thomsen</p>
-                                        </div>
-                                        <hr class="pop-up-praktisk-line">
-                                        <div class="pop-up-praktisk-devider">
-                                            <p class="position-text-left">Medvirkende:</p>
-                                            <ul>
-                                                <!-- Herunder tilføjes flere medvirkende -->
-                                                <li>
-                                                    <p class="position-text-right">Kommer snart</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="api-forestillinger">
+                    <!-- Her ligger den første poster -->
+                    
                 </div>
                 <div id="fremtidig-forestilling-container">
-                    <div class="fremtidig-forestilling">
-                        <div class="fremtidig-forestilling-indhold" id="styling-top">
-                            <h4 class="forestilling-tid">FORESTILLING I SEPTEMBER</h4>
-                        </div>
-                        <div class="fremtidig-forestilling-indhold" id="styling-bottom">
-                            <p class="foresttilling-kommer">KOMMENDE</p>
-                        </div>
-                    </div>
-                    <div class="fremtidig-forestilling">
-                        <div class="fremtidig-forestilling-indhold" id="styling-top">
-                            <h4 class="forestilling-tid">FORESTILLING I DECEMBER</h4>
-                        </div>
-                        <div class="fremtidig-forestilling-indhold" id="styling-bottom">
-                            <p class="foresttilling-kommer">KOMMENDE</p>
-                        </div>
-                    </div>
-                    <div class="fremtidig-forestilling">
-                        <div class="fremtidig-forestilling-indhold" id="styling-top">
-                            <h4 class="forestilling-tid">FORESTILLING I MARTS</h4>
-                        </div>
-                        <div class="fremtidig-forestilling-indhold" id="styling-bottom">
-                            <p class="foresttilling-kommer">KOMMENDE</p>
-                        </div>
-                    </div>
+                    <!-- Indsat API -->
                 </div>
             </section>
         </main>
