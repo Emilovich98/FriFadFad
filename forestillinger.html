@@ -118,29 +118,34 @@
             <section class="kommende-forestilling">
                 <!-- Her ligger den første poster -->
                 <div class="poster">
-                    <div class="poster-image">
-                        <div class="hashtag-container">
-                            <!-- Her skrives hashtags. Dubliker linjen hvis der skal flere hashtags på. -->
-                            <p class="hashtag-text"><span class="hashtag-styling">#</span>Hjertesorg</p>
-                            <p class="hashtag-text"><span class="hashtag-styling">#</span>Hjertesorg</p>
-                            <p class="hashtag-text"><span class="hashtag-styling">#</span>Hjertesorg</p>
-                            <p class="hashtag-text"><span class="hashtag-styling">#</span>Hjertesorg</p>
+                    <div class="poster-content" onclick="openPopUp()">
+                        <div class="poster-image-container">
+                            <img src="images/forestilling-poster.jpg" alt="poster-image">
                         </div>
-                        <div class="poster-title-dato-container">
-                            <!-- Her skrives dato og titel -->
-                            <p class="poster-dato"><span class="text-backround">30.08.2020</span></p>
-                            <h3 class="poster-titel"><span class="text-backround">FRITTER FADØL &amp; FØLJETON</span></h3>
+                        <div class="poster-information">
+                            <div class="hashtag-container">
+                                <!-- Her skrives hashtags. Dubliker linjen hvis der skal flere hashtags på. -->
+                                <p class="hashtag-text"><span class="hashtag-styling">#</span>Hjertesorg</p>
+                                <p class="hashtag-text"><span class="hashtag-styling">#</span>Hjertesorg</p>
+                                <p class="hashtag-text"><span class="hashtag-styling">#</span>Hjertesorg</p>
+                                <p class="hashtag-text"><span class="hashtag-styling">#</span>Hjertesorg</p>
+                            </div>
+                            <div class="poster-title-dato-container">
+                                <!-- Her skrives dato og titel -->
+                                <p class="poster-dato"><span class="text-backround">30.08.2020</span></p>
+                                <h3 class="poster-titel"><span class="text-backround">FRITTER FADØL &amp; FØLJETON</span></h3>
+                            </div>
                         </div>
                     </div>
                     <div class="poster-buttons">
                         <a class="buy-button" href="https://frifadfor-1.ticketbutler.io/da/events/">KØB</a>
-                        <button class="read-more-button">LÆS MERE</button>
+                        <button class="read-more-button" onclick="openPopUp()">LÆS MERE</button>
                     </div>
                     <!-- Pop up vindue -->
                     <div class="poster-popup-info">
                         <div class="poster-info-container">
                             <div class="pop-up-top-container">
-                                <button class="close-button">
+                                <button class="close-button" onclick="closePopUp()">
                                     <img src="images/x-icon.svg" alt="Close-icon">
                                 </button>
                             </div>

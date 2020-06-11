@@ -12,3 +12,16 @@ function closeVideo () {
 
 videoButton.addEventListener("click", openVideo);
 closeVideoButton.addEventListener("click", closeVideo);
+
+const topLogo = document.querySelector("#top-logo");
+
+window.addEventListener("scroll", scrollFunction);
+
+function scrollFunction(){
+    if (window.pageYOffset > 300){
+        topLogo.style.opacity = "100";
+    }
+    else{
+        topLogo.style.opacity = "0";
+    }
+}

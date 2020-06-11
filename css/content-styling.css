@@ -243,23 +243,48 @@ iframe {
     padding-bottom: 2vh;
 }
 
-.kommende-forestilling {}
+.kommende-forestilling {
+    width: 100%;
+}
 
 .poster {
     width: 94%;
     margin: 0 auto;
-    max-width: 700px;
+    position: relative;
+    z-index: 1;
 }
 
-.poster-image {
-    height: 100%;
+.poster-content {
+    position: relative;
+    height: 50vh;
     width: 100%;
+    cursor: pointer;
+}
+
+.poster-image-container {
+    width: 100%;
+    height: 100%;
     border-radius: 15px 15px 0px 0px;
+    position: relative;
     overflow: hidden;
-    background-image: url("../images/forestilling-poster.jpg");
-    background-color: black;
-    background-position: center;
-    background-size: cover;
+    background-color: yellow;
+}
+
+.poster-image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.poster-information {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 100%;
 }
 
 .hashtag-container {
@@ -289,8 +314,8 @@ iframe {
 }
 
 .poster-title-dato-container {
-    height: 100%;
-    margin-top: 30vh;
+    position: absolute;
+    bottom: 0;
 }
 
 .poster-dato {
@@ -359,7 +384,6 @@ iframe {
     padding-top: 12px;
     padding-bottom: 12px;
     cursor: pointer;
-
 }
 
 .read-more-button:hover {
@@ -594,11 +618,11 @@ iframe {
 
 /* Styling af galleri */
 
-.gallery-heading{
-   letter-spacing: 3px;
+.gallery-heading {
+    letter-spacing: 3px;
 }
 
-#image-gallery-container{
+#image-gallery-container {
     padding-left: 150px;
     padding-right: 150px;
     padding-bottom: 100px;
@@ -636,10 +660,10 @@ iframe {
     transition: opacity 5s;
 }
 
-.image-gallery a:hover{
+.image-gallery a:hover {
     z-index: 1;
     transform: scale(1.05);
-    box-shadow: 0 25px 40px rgba(0,0,0,.5);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
     transition: .5s;
 }
 
@@ -896,7 +920,7 @@ iframe {
     line-height: 1.8em;
     font-weight: 300;
     text-align: center;
-    
+
 }
 
 .about-images {}
@@ -1133,10 +1157,6 @@ iframe {
         font-size: 4em;
     }
 
-    .poster {
-        width: 90%;
-    }
-
     .fremtidig-forestilling {
         width: 90%;
     }
@@ -1151,6 +1171,12 @@ iframe {
 
     #frivillig-heading {
         font-size: 4em;
+    }
+
+    /* Forestillinger */
+    .poster {
+        width: 90%;
+        max-width: 700px;
     }
 
 }
@@ -1212,8 +1238,6 @@ iframe {
     #tiny-pukk {
         width: 55%;
     }
-
-
 }
 
 @media screen and (min-width: 768px) {
@@ -1367,6 +1391,13 @@ iframe {
     #gif-video {
         display: none;
     }
+
+    /* Styling af forestillinger ved 768px */
+
+    .kommende-forestilling {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -1496,7 +1527,6 @@ iframe {
     #text-content {
         padding-right: 2vw;
     }
-
 }
 
 
@@ -1510,24 +1540,24 @@ iframe {
             'img-1 img-1 img-2 img-2'
             'img-1 img-1 img-3 img-3'
             'img-4 img-4 img-5 img-5'
-            
+
             'img-6 img-7 img-7 img-7'
             'img-8 img-8 img-8 img-8';
     }
-    
-    .image-gallery a{
+
+    .image-gallery a {
         height: 20rem
     }
-    
-    .img-1{
+
+    .img-1 {
         min-height: 41.5rem;
     }
-    
-    .img-6{
+
+    .img-6 {
         min-height: 20rem;
     }
-    
-     #image-gallery-container{
+
+    #image-gallery-container {
         padding-left: 90px;
         padding-right: 90px;
     }
@@ -1546,19 +1576,16 @@ iframe {
             'img-7 img-7 img-7 img-7'
             'img-8 img-8 img-8 img-8';
     }
-    
-    .image-gallery a, .img1, img6{
+
+    .image-gallery a,
+    .img1,
+    img6 {
         height: 30rem;
         min-height: 30rem;
     }
-    
-    #image-gallery-container{
+
+    #image-gallery-container {
         padding-left: 10px;
         padding-right: 10px;
     }
-    
-    
-    
-
 }
-
